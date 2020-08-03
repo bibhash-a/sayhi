@@ -5,16 +5,27 @@
   <version>0.0.1</version>
   <name>sayhi</name>
   <description>Says hi</description>
+  <build>
   <plugins>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version>
+    <configuration>
+        <release>11</release>
+    </configuration>
+</plugin>
     <plugin>
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-maven-plugin</artifactId>
         <version>0.0.1</version>
         <configuration>
-            <mainClass>HelloFX</mainClass>
+            <mainClass>com.eribib.sayhi.HelloFX</mainClass>
         </configuration>
     </plugin>
+    
   </plugins>
+  </build>
   <dependencies>
   <dependency>
     <groupId>org.openjfx</groupId>
